@@ -5,6 +5,6 @@ public class USDtoBGN {
         Scanner scanner = new Scanner(System.in);
         double dollars = scanner.nextDouble() * 1.79549;
 
-        System.out.println(dollars);
+        System.out.printf("%.2f", dollars);
     }
 }
