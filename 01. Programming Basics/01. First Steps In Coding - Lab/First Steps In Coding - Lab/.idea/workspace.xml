@@ -1,11 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="df6823e3-5052-4465-996d-6dbed1daeced" name="Changes" comment="" />
+    <list default="true" id="df6823e3-5052-4465-996d-6dbed1daeced" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_01. Hello SoftUni/_01. Hello SoftUni.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_01. Hello SoftUni/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_02. Nums 1...10/_02. Nums 1...10.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_02. Nums 1...10/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/_02. Nums 1...10/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProjectsCreation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectsCreation.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
@@ -28,9 +47,27 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "openjdk-20",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="RectangleArea" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RectangleArea" />
+      <module name="First Steps In Coding - Lab" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.RectangleArea" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -40,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1683092564369</updated>
       <workItem from="1683092565532" duration="25000" />
-      <workItem from="1683092629828" duration="175000" />
+      <workItem from="1683092629828" duration="1537000" />
     </task>
     <servers />
   </component>
