@@ -1,0 +1,63 @@
+1. Encapsulation
+
+	- What is Encapsulation (keyword this, private fields, properties, constructors)
+	- Access Modifiers
+	- Validation
+	- Mutuable and Immutable Objects (getters and setters)
+	- Keyword final
+
+	Encapsulation means hiding implementation
+		- wraps the code and data together into a single unit
+		- flexibility and extensibility of the code
+		- reduces complexity
+		- allows validation and data binding
+		- structural changes remain local
+
+
+	The different fields of the class must be private. We use getters (accessor) and setters (mutator) for data access.
+	Getters and Setters are public.
+
+	Keyword this: "This" is reference to the current object (the current instance of a class). This can also invoke current class methods or constructors.
+
+	Access Modifiers:
+		- private - can be accessed only within the declared class itself (interfaces and classes cannot be private)
+		- protected - grants access to subclasses (cannot be applied to interfaces and classes). It prevents nonrelated classes from using it
+		- public - grants access to any class in the Java Universe (accessible by anyone)
+		- default (when we don't declare any access modifier) - available to any other class in the same package
+
+	
+	Validation:
+	
+		Validation happens in:
+			- setters (mutators)
+			- constructor
+
+		When doing validation, it is better to throw exceptions, rather than printing out on the console.
+
+		When validating inside the constructor, it is best to use private setters inside the constructor:
+			
+			- guarantees valid state of object in its creation
+			- guarantees valid state for public setters
+
+			private String name;			// this is the private field
+			private void setName(String name) {	// this is the private setter, that also validates the data
+
+				if (name == "Gosho") {
+					throw new IllegalArgumentExpection("Not available name");	// throws exception if true
+				}
+				else {
+					this.name = name;						// else sets the field to the given value
+				}
+			}
+
+			public Person(String name) {							// sets the field to the already validated value
+				setName(name);
+			}
+
+			
+	Mutable and Immutable Objects:
+
+
+
+ 
+
