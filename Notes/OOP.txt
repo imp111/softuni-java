@@ -21,7 +21,7 @@
 
 	Access Modifiers:
 		- private - can be accessed only within the declared class itself (interfaces and classes cannot be private)
-		- protected - grants access to subclasses (cannot be applied to interfaces and classes). It prevents nonrelated classes from using it
+		- protected - acess to inherited classes, and in the same package. Grants access to subclasses (cannot be applied to interfaces and classes). It prevents nonrelated classes from using it
 		- public - grants access to any class in the Java Universe (accessible by anyone)
 		- default (when we don't declare any access modifier) - available to any other class in the same package
 
@@ -55,7 +55,53 @@
 			}
 
 			
-	Mutable and Immutable Objects:
+	Mutable and Immutable Objects (Collections.unmodifiable()):
+	
+		Mutable (the contents of the instance can be altered/changed)
+		Immutable (the contents of the instance cannot be altered/changed)
+
+		Example where private fields are not fully encapsulated:
+			class Team {
+				private List<Person> players;
+
+				public Team() {
+					this.players = new ArrayList<>();
+				}
+
+				public List<Person> getPlayers() {
+					return this.players;
+				}
+
+			}
+
+			Team team = new Team();
+			Person p1 = new Person("Gosho", "Goshev", 15);
+			team.getPlayers().add(p1); // this should not be happening, encapsulation is broken
+
+
+			In this case, when we use the getter, we can access the other List<> functionalities, such as (add, remove, etc.).
+			That's why we use the Collections.unmodifiable(), which still lets us use this functionalities, but it doesn't have direct implementation, and throws an exception.
+			
+			class Team {
+				private List<Person> players;
+				
+				public void addPlayer(Person person) {
+					this.players.add(person);
+				}
+					
+				public List<Person> getPlayers() {
+					return Collections.unmodifiableList(players); // using that, will not let the list to be changed, we can only add to the list
+				}
+			}
+
+	
+	Keyword final:
+
+		final class - cannot be extended (inherited)
+		final method - cannot be overriden (changed)
+		final fields and variables - cannot be changed once they are set ('=' no longer works, can't assign new value to it)
+
+
 
 
 
