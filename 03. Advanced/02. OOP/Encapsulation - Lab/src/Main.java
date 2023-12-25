@@ -12,10 +12,14 @@ public class Main {
         int n = Integer.parseInt(reader.readLine());
         List<SalaryIncrease.Person> people = new ArrayList<>();
 
-        for (int i = 0; i < n; i++) {
-            String[] input = reader.readLine().split(" ");
-            people.add(new SalaryIncrease.Person(input[0], input[1], Integer.parseInt(input[2]),
-                    Double.parseDouble(input[3])));
+        try {
+            for (int i = 0; i < n; i++) {
+                String[] input = reader.readLine().split(" ");
+                people.add(new SalaryIncrease.Person(input[0], input[1], Integer.parseInt(input[2]),
+                        Double.parseDouble(input[3])));
+            }
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
         }
 
         double bonus = Double.parseDouble(reader.readLine());
