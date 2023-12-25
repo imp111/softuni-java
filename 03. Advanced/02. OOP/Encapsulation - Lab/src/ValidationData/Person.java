@@ -18,7 +18,7 @@ public class Person {
     }
 
     private void setFirstName(String firstName) {
-        if (firstName.length() <= 3) {
+        if (firstName.length() < 3) {
             throw new IllegalArgumentException("Names must be at least 3 symbols");
         }
 
@@ -30,7 +30,7 @@ public class Person {
     }
 
     private void setLastName(String lastName) {
-        if (lastName.length() <= 3) {
+        if (lastName.length() < 3) {
             throw new IllegalArgumentException("Names must be at least 3 symbols");
         }
 
@@ -39,7 +39,7 @@ public class Person {
 
     private void setAge(int age) {
         if (age <= 0) {
-            throw new IllegalArgumentException("Age must not be zero or negative");
+            throw new IllegalArgumentException("Age cannot be zero or negative integer");
         }
 
         this.age = age;
@@ -72,7 +72,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return String.format("%s %s gets %.2f leva.",
+        return String.format("%s %s gets %f leva.",
                 this.getFirstName(),
                 this.getLastName(),
                 this.getSalary());
