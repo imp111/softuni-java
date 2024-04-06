@@ -41,7 +41,28 @@
 	Constructors: 
 		These are methods used to instantiate an object. And is used with the keyword "new".
 
+2. Inheritance - minimize duplicate code (keyword "extends")
 
+	There should not be too great an inheritance streak (too long inheritance, a lot of grandkids) 
 
- 
+	- Base class (superclass, parent class) - the base class gives its members (fields, properties, methods) to the child (the class that inherits the parent class). 
+	- Subclass (child class) - the child points to the parent class. The child always knows who it inherits. The child gets all the (fields, properties, and methods) of the parent class (inherits absolutely everything!). 
+
+	Keyword 'super' - calls the super constructor (the constructor of the base class) 
+
+	Multiple Inheritance – a class can inherit only one class (unlike interfaces, where a class can inherit multiple interfaces) 
+
+ 	Shadowing Variable -  
+
+	When overriding a method, we should keep the method signature from the parent class. Method signature contains (@override - annotation): 
+		- Method name 
+		- Parameters types (int, string) - the name of the parameters could be different, but types should be the same 
+	
+	Hierarchy in Java Structures: 
+		1. Iterable 
+		2. Collection 
+		3. Queue, Set, List 
+			- Queue – PriorityQueue, Dequeue - ArrayDequeue 
+			- List – ArrayList, LinkedList, Vector, Stack 
+			- Set -  LinkedHashet, HashSet, SortedSet - TreeSet 
 
