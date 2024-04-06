@@ -1,109 +1,68 @@
-1. Encapsulation
-
-	- What is Encapsulation (keyword this, private fields, properties, constructors)
-	- Access Modifiers
-	- Validation
-	- Mutuable and Immutable Objects (getters and setters)
-	- Keyword final
-
-	Encapsulation means hiding implementation
-		- wraps the code and data together into a single unit
-		- flexibility and extensibility of the code
-		- reduces complexity
-		- allows validation and data binding
-		- structural changes remain local
-
+1. Encapsulation (hiding implementation)
+	- wraps the code and data together into a single unit
+	- flexibility and extensibility of the code
+	- reduces complexity
+	- allows validation and data binding
+	- structural changes remain local
 
 	The different fields of the class must be private. We use getters (accessor) and setters (mutator) for data access.
-	Getters and Setters are public.
+	Getters are public, and Setters can be public/private.
 
-	Keyword this: "This" is reference to the current object (the current instance of a class). This can also invoke current class methods or constructors.
+	"this" - reference to the current object (the current instance of a class). This can also invoke current class methods or constructors.
 
 	Access Modifiers:
-		- private - can be accessed only within the declared class itself (interfaces and classes cannot be private)
-		- protected - acess to inherited classes, and in the same package. Grants access to subclasses (cannot be applied to interfaces and classes). It prevents nonrelated classes from using it
-		- public - grants access to any class in the Java Universe (accessible by anyone)
-		- default (when we don't declare any access modifier) - available to any other class in the same package
+		- Private - can be accessed only within the declared class itself (interfaces and classes cannot be private). 
+		- Public – visible to everyone  
+		- Protected – accessible by members who inherit or from the same package (cannot be applied to interfaces and classes). It prevents nonrelated classes from using it
+		- Package Private (default - when no access modifier is declared) – available to any other class in the same package
 
+	Validation is done in:
+		- setters (mutators) (usually in the setters)
+		- constructors (rarely)
 	
-	Validation:
-	
-		Validation happens in:
-			- setters (mutators)
-			- constructor
-
-		When doing validation, it is better to throw exceptions, rather than printing out on the console.
+		When doing validation, it is better to throw exceptions, rather than printing them out on the console.
 
 		When validating inside the constructor, it is best to use private setters inside the constructor:
-			
-			- guarantees valid state of object in its creation
+			- guarantees the valid state of the object in its creation
 			- guarantees valid state for public setters
-
-			private String name;			// this is the private field
-			private void setName(String name) {	// this is the private setter, that also validates the data
-
-				if (name == "Gosho") {
-					throw new IllegalArgumentExpection("Not available name");	// throws exception if true
-				}
-				else {
-					this.name = name;						// else sets the field to the given value
-				}
-			}
-
-			public Person(String name) {							// sets the field to the already validated value
-				setName(name);
-			}
-
-			
+	
 	Mutable and Immutable Objects (Collections.unmodifiable()):
-	
-		Mutable (the contents of the instance can be altered/changed)
-		Immutable (the contents of the instance cannot be altered/changed)
+		- Mutable (the contents of the instance can be altered/changed)
+		- Immutable (the contents of the instance cannot be altered/changed)
 
-		Example where private fields are not fully encapsulated:
-			class Team {
-				private List<Person> players;
-
-				public Team() {
-					this.players = new ArrayList<>();
-				}
-
-				public List<Person> getPlayers() {
-					return this.players;
-				}
-
-			}
-
-			Team team = new Team();
-			Person p1 = new Person("Gosho", "Goshev", 15);
-			team.getPlayers().add(p1); // this should not be happening, encapsulation is broken
-
-
-			In this case, when we use the getter, we can access the other List<> functionalities, such as (add, remove, etc.).
-			That's why we use the Collections.unmodifiable(), which still lets us use this functionalities, but it doesn't have direct implementation, and throws an exception.
+		In this case, when we use the getter, we can access the other List<> functionalities, such as (add, remove, etc.), which breaks the encapsulation.
+		That's why we use the Collections.unmodifiable(), which still lets us use these functionalities, but it doesn't have a direct implementation and throws an exception.
 			
-			class Team {
-				private List<Person> players;
-				
-				public void addPlayer(Person person) {
-					this.players.add(person);
-				}
-					
-				public List<Person> getPlayers() {
-					return Collections.unmodifiableList(players); // using that, will not let the list to be changed, we can only add to the list
-				}
-			}
-
-	
 	Keyword final:
-
 		final class - cannot be extended (inherited)
-		final method - cannot be overriden (changed)
-		final fields and variables - cannot be changed once they are set ('=' no longer works, can't assign new value to it)
+		final method - cannot be overridden (changed)
+		final fields and variables - cannot be changed once they are set ('=' no longer works, can't assign a new value to it)
 
+	Constructors: 
+		These are methods used to instantiate an object. And is used with the keyword "new".
 
+2. Inheritance - minimize duplicate code (keyword "extends")
 
+	There should not be too great an inheritance streak (too long inheritance, a lot of grandkids) 
 
+	- Base class (superclass, parent class) - the base class gives its members (fields, properties, methods) to the child (the class that inherits the parent class). 
+	- Subclass (child class) - the child points to the parent class. The child always knows who it inherits. The child gets all the (fields, properties, and methods) of the parent class (inherits absolutely everything!). 
 
- 
+	Keyword 'super' - calls the super constructor (the constructor of the base class) 
+
+	Multiple Inheritance – a class can inherit only one class (unlike interfaces, where a class can inherit multiple interfaces) 
+
+ 	Shadowing Variable -  
+
+	When overriding a method, we should keep the method signature from the parent class. Method signature contains (@override - annotation): 
+		- Method name 
+		- Parameters types (int, string) - the name of the parameters could be different, but types should be the same 
+	
+	Hierarchy in Java Structures: 
+		1. Iterable 
+		2. Collection 
+		3. Queue, Set, List 
+			- Queue – PriorityQueue, Dequeue - ArrayDequeue 
+			- List – ArrayList, LinkedList, Vector, Stack 
+			- Set -  LinkedHashet, HashSet, SortedSet - TreeSet 
 
