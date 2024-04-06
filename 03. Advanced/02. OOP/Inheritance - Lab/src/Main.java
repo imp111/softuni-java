@@ -1,3 +1,4 @@
+import HierarchicalInheritance.Cat;
 import SingleInheritance.Dog;
 
 public class Main {
@@ -5,5 +6,9 @@ public class Main {
         Dog dog = new Dog();
         dog.eat();
         dog.bark();
+
+        Cat cat = new Cat();
+        cat.eat();
+        cat.meow();
     }
 }
