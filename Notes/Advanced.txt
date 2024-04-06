@@ -1,23 +1,14 @@
 1. Stacks and Queues
 
-	Algorith:
-	
-		Algorithm Complexity - describes performance of particular algorithm
+	Algorithm:
+		Algorithm Complexity - describes the performance of the particular algorithm.
 		Runtime and memory consumption is based on input size N.
 	
 	Stacks:
-		
-		Create stack:
-		- ArrayDeque<dataType> nameOfTheStack = new ArrayDeque<dataType>(size);
-	
-		Add element to the stack:
-		- stack.push(element);
-		
-		Remove element from the stack (the last element that was added to the stack):
-		- stack.pop();
-		
-		Get the last element of the stack:
-		- Integer element = stack.peek();
+		- ArrayDeque<dataType> nameOfTheStack = new ArrayDeque<dataType>(size); // Create stack:
+		- stack.push(element); // Add element to the stack:
+		- stack.pop(); // Remove element from the stack (the last element that was added to the stack):
+		- Integer element = stack.peek(); // Get the last element of the stack:
 		
 		Stack Utility Methods:
 			- int sizeOfStack = stack.size();
