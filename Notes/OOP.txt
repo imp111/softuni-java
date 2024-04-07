@@ -58,6 +58,11 @@
 		- Method name 
 		- Parameters types (int, string) - the name of the parameters could be different, but types should be the same 
 	
+	Types of code reuse:
+		- Extension (inheritance)
+		- Composition - using classes to define classes (Laptop -> (Monitor, Touchpad, Keyboard) we are reusing the monitor, touchpad, and keyboard classes to define the laptop class).
+		- Delegation (Laptop (Monitor) -> increaseBrightness) - the laptop class delegates to the monitor class to increase its brightness
+
 	Hierarchy in Java Structures: 
 		1. Iterable 
 		2. Collection 
