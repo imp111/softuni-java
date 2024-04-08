@@ -1,4 +1,4 @@
-1. Encapsulation (hiding implementation)
+1. Encapsulation (hiding implementation):
 	- wraps the code and data together into a single unit
 	- flexibility and extensibility of the code
 	- reduces complexity
@@ -41,7 +41,7 @@
 	Constructors: 
 		These are methods used to instantiate an object. And is used with the keyword "new".
 
-2. Inheritance - minimize duplicate code (keyword "extends")
+2. Inheritance - minimize duplicate code (keyword "extends"):
 
 	There should not be too great an inheritance streak (too long inheritance, a lot of grandkids) 
 
@@ -71,3 +71,48 @@
 			- List – ArrayList, LinkedList, Vector, Stack 
 			- Set -  LinkedHashet, HashSet, SortedSet - TreeSet 
 
+
+3. Abstraction and Interfaces: 
+	Interface - does not contain any implementation of the methods, fields, and properties. Interfaces are always public.
+
+	Abstract class - in the abstract classes we can define what is the percentage of abstraction. Usually, it is a good solution if we need classes with some percentage of abstraction different than 0% (normal class) and 100% (interface). Abstract classes are like normal classes, but they cannot be instantiated and can contain abstract methods. It is usually used as a middle layer of an interface and class. Abstract classes cannot be instantiated. 
+	Abstract classes access modifiers can be:
+		- public
+		- protected
+		- default (package private)
+
+	- Interface extends Interface
+	- Class implements Interfaces
+	- Class extends Class
+
+	Static is not used in instances (objects). It is loaded with the compilation of the program (it is not dynamic, it cannot change dynamically while the program is running) 
+	Final – can't be changed, constant 
+
+4. Polymorphism (Poly - Many, Morphe - Forms, Ability of a object to take many forms):
+
+	Method Overloading – change in the signature of the method. Method Overloading is only for methods in the same context (class). It is not applicable when inheriting.  
+
+	Constructors can be overloaded 
+	Method overloading is done by changing: 
+		- The number of parameters 
+		- The type of the parameters 
+		- The sequence of the parameters 
+
+	Method Overriding – it is done only in the children class.  
+		- Argument list must be the same as the parent method. 
+		- Also the return type must be the same as well. 
+		- Access modifiers cannot be more restrictive than the parent one. 
+		- Private, static and final methods cannot be overriden. 
+
+	Keyword "Instanceof" - checks if object is an instance of specific class. It is not a good practice to use it, it is best to just change the reference type.
+
+5. SOLID (Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion):
+
+	S – Single Responsibility – class should have one responsibility (kinda like the swiss knife, it is bad idea for a class to be able to do a lot of stuff, it is best for the class to do only one thing). 
+		- Reduces dependency complexion 
+		- Each additional responsibility is an axis to change the class 
+		- Classes can still have multiple methods (as long as these methods are relevant to the class purpouse) 
+	O – Open/Closed - open for extension, but closed for modification (in short, we have to be able to extend the code (add new feature by extending it), instead of having to modify the current code). 
+	L – Liskov Substitution – objects should be replaceable by instances of their subtypes without altering the correctness of the program (to be able to do easy polymorphism) 
+	I – Interface Segregation – many specific interfaces are better than one general interface 
+	D – Dependency Inversion – one should depend on abstraction, not on concretions 
