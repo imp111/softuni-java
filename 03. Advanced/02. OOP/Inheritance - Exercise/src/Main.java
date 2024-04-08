@@ -1,16 +1,15 @@
 import Person.Child;
+import PlayersAndMonsters.Elf;
+import PlayersAndMonsters.Hero;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Hero hero = new Hero("Pussy Slayer", 10);
+        Elf elf = new Elf("Pussy Destroyer", 20);
 
-        String name = scanner.nextLine();
-        int age = Integer.parseInt(scanner.nextLine());
-
-        Child child = new Child(name, age);
-
-        System.out.println(child.getName());
-        System.out.println(child.getAge());
+        System.out.println(hero.toString());
+        System.out.println(elf.toString());
     }
 }
