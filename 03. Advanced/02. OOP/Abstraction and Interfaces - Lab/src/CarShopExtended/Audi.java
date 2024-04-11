@@ -12,16 +12,21 @@ public class Audi extends CarImpl implements Car, Rentable {
 
     @Override
     public Integer getMinRentDay() {
-        return 0;
+        return this.minRentDay;
     }
 
     @Override
     public Double getPricePerDay() {
-        return 0.0;
+        return this.pricePerDay;
     }
 
     @Override
     public String toString() {
-        return String.format(" ");
+        return String.format("This is %s produced in %s and have %s tires\nMinimum rental period of %s days. Price per day %s",
+                this.getModel(),
+                this.getCountryProduced(),
+                this.tires,
+                this.getMinRentDay(),
+                this.getPricePerDay());
     }
 }
