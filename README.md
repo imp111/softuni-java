@@ -1,7 +1,7 @@
 # [Software University Courses](https://softuni.bg/)
 This repository contains all of my completed SoftUni course exercises.
 
-## :white_check_mark: [CSharp-OOP](https://github.com/imp111/SoftUni/tree/main/02.%20C%23%20OOP)
+## :white_check_mark: [Java OOP](https://github.com/imp111/SoftUni/tree/main/02.%20C%23%20OOP)
 01. Working with Abstraction
 02. Inheritance
 03. Encapsulation
@@ -15,7 +15,7 @@ This repository contains all of my completed SoftUni course exercises.
 11. Test-driven development
 -->
 
-## :white_check_mark: [CSharp-Advanced](https://github.com/imp111/SoftUni/tree/main/03.%20C%23%20Advanced)
+## :white_check_mark: [Java Advanced](https://github.com/imp111/SoftUni/tree/main/03.%20C%23%20Advanced)
 01. Stacks and Queues
 02. Multidimensional Arrays
 <!--
