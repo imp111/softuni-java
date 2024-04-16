@@ -1,7 +1,7 @@
 # [Software University Courses](https://softuni.bg/)
 This repository contains all of my completed SoftUni course exercises.
 
-## :white_check_mark: [Java OOP](https://github.com/imp111/SoftUni/tree/main/02.%20C%23%20OOP)
+## [Java OOP](https://github.com/imp111/softuni-java/tree/main/03.%20Advanced/02.%20OOP)
 01. Working with Abstraction
 02. Inheritance
 03. Encapsulation
@@ -15,7 +15,7 @@ This repository contains all of my completed SoftUni course exercises.
 11. Test-driven development
 -->
 
-## :white_check_mark: [Java Advanced](https://github.com/imp111/SoftUni/tree/main/03.%20C%23%20Advanced)
+## [Java Advanced](https://github.com/imp111/softuni-java/tree/main/03.%20Advanced/01.%20Advanced)
 01. Stacks and Queues
 02. Multidimensional Arrays
 <!--
@@ -27,7 +27,7 @@ This repository contains all of my completed SoftUni course exercises.
 8. Iterators and Comparators
 -->
 
-## :white_check_mark: [MySQL](https://github.com/imp111/SoftUni/tree/main/05.%20MySQL)
+## [MySQL](https://github.com/imp111/softuni-java/tree/main/04.%20Database)
 01. Data Definition and Datatypes
 02. Basic CRUD
 03. Built-in Functions
