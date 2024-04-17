@@ -73,12 +73,15 @@
 
 
 3. Abstraction and Interfaces: 
-	Abstraction - ignoring irrelevant features, props or functions. It lets you focus on what object does instead of how it does it!
+	Abstraction - ignoring irrelevant features, props, or functions. It lets you focus on what an object does instead of how it does it!
 
 	2 ways to achieve abstraction:
 		- Interface (100% abstract) - does not contain any implementation of the methods, fields, and properties. Interfaces are always public.
-		- Abstract class (0 - 100% abstraction) - in the abstract classes we can define what is the percentage of abstraction. Usually, it is a good solution if we need classes with some percentage of abstraction different than 0% (normal class) and 100% (interface). Abstract classes are like normal classes, but they cannot be instantiated and can contain abstract methods. It is usually used as a middle layer of an interface and class. Abstract classes cannot be instantiated. 
-		
+		- Abstract class (0 - 100% abstraction) - in the abstract classes we can define what is the percentage of abstraction. Usually, it is a good solution if we need classes with some percentage of abstraction different than 0% (normal class) and 100% (interface). Abstract classes are like normal classes, but they cannot be instantiated and can contain abstract methods. It is usually used as a middle layer of an interface and class.
+			- Abstract class does not need to implement all the methods from the interface, but all the members that inherit the abstract class have to.
+			- Abstract methods (public abstract void name) - need to be implemented in the child class.
+				- they can be public, protected or package-private (default)
+
 		Abstract classes access modifiers can be:
 			- public
 			- protected
