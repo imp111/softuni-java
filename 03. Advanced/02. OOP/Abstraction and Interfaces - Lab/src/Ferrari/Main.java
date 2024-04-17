@@ -8,6 +8,6 @@ public class Main {
         String driversName = scanner.nextLine();
 
         Car ferrari = new Ferrari(driversName);
-        System.out.print(ferrari.toString());
+        System.out.print(ferrari);
     }
 }
