@@ -1,8 +1,5 @@
 package BirthdayCelebration;
 
-import MultipleImplementation.Birthable;
-import MultipleImplementation.Identifiable;
-
 public class Citizen implements Identifiable, Birthable {
     private String name;
     private int age;
@@ -25,12 +22,12 @@ public class Citizen implements Identifiable, Birthable {
     }
 
     @Override
-    public String getBirthDate() {
-        return this.birthdate;
+    public String getId() {
+        return this.id;
     }
 
     @Override
-    public String getId() {
-        return this.id;
+    public String getBirthDate() {
+        return this.birthdate;
     }
 }

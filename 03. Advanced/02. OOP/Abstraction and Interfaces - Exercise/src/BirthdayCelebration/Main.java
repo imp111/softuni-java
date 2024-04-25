@@ -1,23 +1,48 @@
 package BirthdayCelebration;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-//        You will receive from the console an unknown amount of lines until the command "End" is received, each line will
-//        contain information in one of the following formats "Citizen {name} {age} {id} {birthdate}" for citizens,
-//                "Robot {model} {id}" for robots or "Pet {name} {birthdate}" for pets. After the end command on the
-//        next line, you will receive a single number representing a specific year, your task is to print all birthdates (of both
-//        citizens and pets) in that year in the format "{day}/{month}/{year}" (the order of printing doesn’t matter).
-
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
+        ArrayList<Citizen> citizens = new ArrayList<>();
+        ArrayList<Pet> pets = new ArrayList<>();
 
         while (input.equalsIgnoreCase("end")) {
             String[] elements = input.split("/");
+            String type = elements[0];
 
+            switch (type.toLowerCase()) {
+                case "robot":
+                    new Robot(elements[1], elements[2]);
+                    break;
+                case "citizen":
+                    citizens.add(new Citizen(elements[1], Integer.parseInt(elements[2]), elements[3], elements[4]));
+                    break;
+                case "pet":
+                    pets.add(new Pet(elements[1], elements[2]));
+                    break;
+                default:
+                    System.out.println("Invalid argument.");
+                    break;
+            }
             input = scanner.nextLine();
         }
 
+        String birthdate = scanner.nextLine();
+
+        for (Citizen citizen : citizens) {
+            if (citizen.getBirthDate().endsWith(birthdate)) {
+                System.out.println(citizen.getBirthDate());
+            }
+        }
+
+        for (Pet pet : pets) {
+            if (pet.getBirthDate().endsWith(birthdate)) {
+                System.out.println(pet.getBirthDate());
+            }
+        }
     }
 }

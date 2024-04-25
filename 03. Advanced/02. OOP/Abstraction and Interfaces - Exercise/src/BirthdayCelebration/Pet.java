@@ -1,8 +1,5 @@
 package BirthdayCelebration;
 
-import MultipleImplementation.Birthable;
-import MultipleImplementation.Identifiable;
-
 public class Pet implements Birthable {
     private String name;
     private String birthdate;
