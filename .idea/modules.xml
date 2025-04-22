@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/03. Advanced/02. OOP/Abstraction and Interfaces - Exercise/Abstraction and Interfaces - Exercise.iml" filepath="$PROJECT_DIR$/03. Advanced/02. OOP/Abstraction and Interfaces - Exercise/Abstraction and Interfaces - Exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03. Advanced/02. OOP/Abstraction and Interfaces - Lab/Abstraction and Interfaces - Lab.iml" filepath="$PROJECT_DIR$/03. Advanced/02. OOP/Abstraction and Interfaces - Lab/Abstraction and Interfaces - Lab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01. Programming Basics/Conditional Statements - Exercise/Conditional Statements - Exercise.iml" filepath="$PROJECT_DIR$/01. Programming Basics/Conditional Statements - Exercise/Conditional Statements - Exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01. Programming Basics/Conditional Statements - Lab/Conditional Statements - Lab.iml" filepath="$PROJECT_DIR$/01. Programming Basics/Conditional Statements - Lab/Conditional Statements - Lab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03. Advanced/02. OOP/Encapsulation - Exercise/Encapsulation - Exercise.iml" filepath="$PROJECT_DIR$/03. Advanced/02. OOP/Encapsulation - Exercise/Encapsulation - Exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03. Advanced/02. OOP/Encapsulation - Lab/Encapsulation - Lab.iml" filepath="$PROJECT_DIR$/03. Advanced/02. OOP/Encapsulation - Lab/Encapsulation - Lab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01. Programming Basics/First Steps In Coding - Exercise/First Steps In Coding - Exercise.iml" filepath="$PROJECT_DIR$/01. Programming Basics/First Steps In Coding - Exercise/First Steps In Coding - Exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01. Programming Basics/First Steps In Coding - Lab/First Steps In Coding - Lab.iml" filepath="$PROJECT_DIR$/01. Programming Basics/First Steps In Coding - Lab/First Steps In Coding - Lab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03. Advanced/02. OOP/Inheritance - Exercise/Inheritance - Exercise.iml" filepath="$PROJECT_DIR$/03. Advanced/02. OOP/Inheritance - Exercise/Inheritance - Exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03. Advanced/02. OOP/Inheritance - Lab/Inheritance - Lab.iml" filepath="$PROJECT_DIR$/03. Advanced/02. OOP/Inheritance - Lab/Inheritance - Lab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03. Advanced/01. Advanced/StacksAndQueues - Exercise/StacksAndQueues - Exercise.iml" filepath="$PROJECT_DIR$/03. Advanced/01. Advanced/StacksAndQueues - Exercise/StacksAndQueues - Exercise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03. Advanced/01. Advanced/StacksAndQueues - Lab/StacksAndQueues - Lab.iml" filepath="$PROJECT_DIR$/03. Advanced/01. Advanced/StacksAndQueues - Lab/StacksAndQueues - Lab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03. Advanced/02. OOP/Working with Abstraction - Lab/Working with Abstraction - Lab.iml" filepath="$PROJECT_DIR$/03. Advanced/02. OOP/Working with Abstraction - Lab/Working with Abstraction - Lab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/softuni-java.iml" filepath="$PROJECT_DIR$/.idea/softuni-java.iml" />
+    </modules>
+  </component>
+</project>

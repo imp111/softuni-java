@@ -15,6 +15,7 @@ public class BrowserHistory {
                     System.out.println("no previous URLs");
                 }
                 else {
+                    stack.pop();
                     current = stack.peek();
                     System.out.println(current);
                 }
